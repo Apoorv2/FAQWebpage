@@ -1,0 +1,58 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+.App{
+    width: 100%;
+    min-height: 100vh;
+    padding:20px 0;
+    background: rgb(243, 235, 235);
+}
+.container{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+.accordian{
+    width: 100%;
+    max-width:540px;
+    margin:180px auto;
+    color:#fff;
+}
+.accordianonHeading{
+    background: rgb(12, 34, 94);
+    padding: 14px 0;
+}
+.accordianonHeading .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordianonHeading p{
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+ 
+.accordianonHeading span{
+    cursor: pointer;
+}
+.accordianonContent{
+    background: rgb(6, 73, 173);
+    /*height:0;
+    opacity: 0;*/
+    display: flex;
+    overflow:hidden;
+    transition:all 600ms ease-in-out;
+}
+.accordianonContent.show{
+    height: 180px;
+    opacity: 1;
+}
+
+.accordianonContent p{
+    font-size: 15px;
+    line-height: 1.6;
+}
